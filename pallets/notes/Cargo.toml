@@ -2,20 +2,24 @@
 name = "pallet-notes"
 version = "0.1.0"
 edition = "2021"
+publish = false
+
+[lib]
+name = "pallet_notes"
+path = "src/lib.rs"
+crate-type = ["rlib"]
 
 [dependencies]
-parity-scale-codec = { workspace = true, default-features = false, features = ["derive"] }
-scale-info          = { workspace = true, default-features = false, features = ["derive"] }
-frame-support       = { workspace = true, default-features = false }
-frame-system        = { workspace = true, default-features = false }
-sp-std              = { workspace = true, default-features = false }
+codec         = { workspace = true, default-features = false, features = ["derive"] }
+scale-info    = { workspace = true, default-features = false, features = ["derive"] }
+frame-support = { workspace = true, default-features = false }
+frame-system  = { workspace = true, default-features = false }
 
 [features]
 default = ["std"]
 std = [
-  "parity-scale-codec/std",
+  "codec/std",
   "scale-info/std",
   "frame-support/std",
   "frame-system/std",
-  "sp-std/std",
 ]
