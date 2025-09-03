@@ -50,7 +50,7 @@ pallet-notes = { path = "../pallets/notes", default-features = false }
 
 
 [build-dependencies]
-substrate-wasm-builder = { optional = true, workspace = true, default-features = true }
+substrate-wasm-builder = { workspace = true, optional = true }
 
 [features]
 default = ["std"]

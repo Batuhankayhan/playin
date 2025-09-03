@@ -72,3 +72,4 @@ sp-session = { version = "38.1.0", default-features = false }
 sp-storage = { version = "22.0.0", default-features = false }
 sp-transaction-pool = { version = "36.0.0", default-features = false }
 sp-version = { version = "39.0.0", default-features = false }
+substrate-wasm-builder = { version = "26.0.1", default-features = false }
